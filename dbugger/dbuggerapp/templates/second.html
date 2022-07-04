@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'second.css' %}">
+    <title>Welcome</title>
+</head>
+<body>
+<header>
+	<h1>Problems</h1>
+</header>
+<div class = "new"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h2 style="padding: 10px;"> Problem 1 </h2><br>
+<h2 style="padding: 10px;"> Problem 2 </h2><br>
+<h2 style="padding: 10px;"> Problem 3 </h2><br>
+    {% for i in problem%}
+<h2 style="padding: 10px; color: #ffffff; border: 1px solid white;
+	border-radius: 20px; margin-left: 10px; margin-right: 40px"> {{i.title}} </h2><br>
+    {% endfor %}
+</div>
+
+</body>
+</html>
+</html>
